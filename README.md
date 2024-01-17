@@ -1,4 +1,4 @@
-# Sup-Res :chart_with_upwards_trend:
+# Stadium Live Demo: My work for the past 8 months:
 
 _For online demonstration_ -> https://arabacibahadir.github.io/sup-res/ 
 
