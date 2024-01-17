@@ -7,16 +7,20 @@ I hit the ground running and shipped multiple complex, end-to-end features. Belo
 
 ## Feature#1: User Profile Revamp📱
 
+New Profile             |  Old Profile
+:-------------------------:|:-------------------------:
+![](Profiles/profile_new.png)  |  ![](Profiles/profile_old.png)
+
 - Complete overhaul of old user profile
 - Refractored old profile queries using graphql batching and caching for speedy performance gains 
 - Smooth, animated scrolling components inspired by Twitter profiles
+- Added new Faves, badges, and friends scrollview. 
+- Added collectibles and items animated slideshow components
 
-<table style="border: none;">
-  <tr>
-    <td style="border: none;"><img src="https://github.com/Tony2520/Stadium-Live-Demo/assets/117308186/dc46c19e-9479-48c6-a5b1-08e34521de76" alt="Old Profile" style="width: 200px;"></td>
-    <td style="border: none;"><img src="https://github.com/Tony2520/Stadium-Live-Demo/assets/117308186/3d3308b5-0b7a-485d-b004-9cce3bdaa8ae" alt="New Profile" style="width: 200px;"></td>
-  </tr>
-</table>
+Demo:
+![Profile Demo](Profiles/profile_demo.gif)
+
+
 
 ## Installation :hammer_and_wrench:
 Sup-Res requires Python 3.10+ to run.
