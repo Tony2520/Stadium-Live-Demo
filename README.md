@@ -8,18 +8,14 @@ I hit the ground running and shipped multiple complex, end-to-end features. Belo
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/32988819/166165397-af4c7f29-1746-49b6-be3a-9a12d838f7e6.gif)
 
 
-## Feature#1: User Profile Revamp 📱:
+## Feature#1: User Profile Revamp📱
 
 - Complete overhaul of old user profile
-- Refractored old profile calls using graphql batching and caching  
-- Export documents as `HTML, PDF, .jpeg, .png` 
-- Automatically share to your twitter followers with an image and text of support-resistance levels
-- Supports [Tradingview Pine Script](https://www.tradingview.com/pine-script-docs/en/v4/Introduction.html) 
-- Manageable via [Telegram](https://python-telegram-bot.org)
--
+- Refractored old profile queries using graphql batching and caching for speedy performance gains 
+- Smooth, animated scrolling components inspired by Twitter profiles
 
 ![Old Profile](https://github.com/Tony2520/Stadium-Live-Demo/assets/117308186/dc46c19e-9479-48c6-a5b1-08e34521de76)
-
+![New Profile](https://github.com/Tony2520/Stadium-Live-Demo/assets/117308186/3d3308b5-0b7a-485d-b004-9cce3bdaa8ae)
 
 ## Installation :hammer_and_wrench:
 Sup-Res requires Python 3.10+ to run.
