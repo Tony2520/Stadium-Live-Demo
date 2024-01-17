@@ -1,16 +1,17 @@
 # Stadium Live Demo: My work for the past 8 months:
 
-_For online demonstration_ -> https://arabacibahadir.github.io/sup-res/ 
+If you want to check out the app -> https://www.stadiumverse.com/
 
-Sup-Res is  mobile-ready, offline-storage compatible and a great companion for finding liquidity pools, support and resistance levels with a scalable chart.
+Stadium Live is a rising betting / fantasy mobile app with around 80k daily active user and 250K total downloads. With an engineering team of 8,
+I hit the ground running and shipped multiple complex, end-to-end features. Below are 4 most note-worthy ones.
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/32988819/166165397-af4c7f29-1746-49b6-be3a-9a12d838f7e6.gif)
 
 
-## Features :star2:
+## Feature#1: User Profile Revamp 📱:
 
-- Easily find support-resistance and liquidity levels on the chart
-- Using it in almost any time series with sensitivity adjustment 
+- Complete overhaul of old user profile
+- Refractored old profile calls using graphql batching and caching  
 - Export documents as `HTML, PDF, .jpeg, .png` 
 - Automatically share to your twitter followers with an image and text of support-resistance levels
 - Supports [Tradingview Pine Script](https://www.tradingview.com/pine-script-docs/en/v4/Introduction.html) 
