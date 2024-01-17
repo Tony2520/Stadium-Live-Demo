@@ -5,17 +5,18 @@ If you want to check out the app -> https://www.stadiumverse.com/
 Stadium Live is a rising betting / fantasy mobile app with around 80k daily active user and 250K total downloads. With an engineering team of 8,
 I hit the ground running and shipped multiple complex, end-to-end features. Below are 4 most note-worthy ones.
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/32988819/166165397-af4c7f29-1746-49b6-be3a-9a12d838f7e6.gif)
-
-
 ## Feature#1: User Profile Revamp📱
 
 - Complete overhaul of old user profile
 - Refractored old profile queries using graphql batching and caching for speedy performance gains 
 - Smooth, animated scrolling components inspired by Twitter profiles
 
-![Old Profile](https://github.com/Tony2520/Stadium-Live-Demo/assets/117308186/dc46c19e-9479-48c6-a5b1-08e34521de76)
-![New Profile](https://github.com/Tony2520/Stadium-Live-Demo/assets/117308186/3d3308b5-0b7a-485d-b004-9cce3bdaa8ae)
+<table style="border: none;">
+  <tr>
+    <td style="border: none;"><img src="https://github.com/Tony2520/Stadium-Live-Demo/assets/117308186/dc46c19e-9479-48c6-a5b1-08e34521de76" alt="Old Profile" style="width: 200px;"></td>
+    <td style="border: none;"><img src="https://github.com/Tony2520/Stadium-Live-Demo/assets/117308186/3d3308b5-0b7a-485d-b004-9cce3bdaa8ae" alt="New Profile" style="width: 200px;"></td>
+  </tr>
+</table>
 
 ## Installation :hammer_and_wrench:
 Sup-Res requires Python 3.10+ to run.
