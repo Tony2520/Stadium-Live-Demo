@@ -16,9 +16,10 @@ I hit the ground running and shipped multiple complex, end-to-end features. Belo
 - Automatically share to your twitter followers with an image and text of support-resistance levels
 - Supports [Tradingview Pine Script](https://www.tradingview.com/pine-script-docs/en/v4/Introduction.html) 
 - Manageable via [Telegram](https://python-telegram-bot.org)
-- WebUI
+-
 
-![git](https://user-images.githubusercontent.com/32988819/148457547-45d47bc2-52a0-426a-8d4c-861fe6fd013d.png)
+![Old Profile](https://github.com/Tony2520/Stadium-Live-Demo/assets/117308186/dc46c19e-9479-48c6-a5b1-08e34521de76)
+
 
 ## Installation :hammer_and_wrench:
 Sup-Res requires Python 3.10+ to run.
