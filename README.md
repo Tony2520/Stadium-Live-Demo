@@ -13,7 +13,7 @@ New Profile             |  Old Profile
 
 - Complete overhaul of old user profile
 - Refractored old profile queries using graphql batching and caching for speedy performance gains 
-- Smooth, animated scrolling components inspired by Twitter profiles
+- Smooth, animated scrolling components inspired by Twitter profiles![Profile Demo](Profiles/profile_demo.gif)
 - Added new Faves, badges, and friends scrollview. 
 - Added collectibles and items animated slideshow components
 
