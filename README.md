@@ -28,28 +28,24 @@ New Profile             |  Old Profile
 <div style="width: 100%; display: flex; justify-content: center;">
   <table style="width: 100%">
     <tr>
-        <th style="width: 50%; text-align: center;">Smooth, animated scrolling/loading components</th>
-        <th style="width: 50%; text-align: center;">Faves editing and player profiles</th>
+        <th style="width: 33%; text-align: center;">Animated scrolling/loading components</th>
+        <th style="width: 33%; text-align: center;">Faves editing and player profiles</th>
+        <th style="width: 33%; text-align: center;">Badges collection</th>
     </tr>
     <tr>
-        <td><img src="Profiles/intro.gif" alt="Profile Demo"></td>
-        <td><img src="Profiles/faves.gif" alt="Faves gif"></td>
+        <td ><img src="Profiles/intro.gif" alt="Profile Demo"></td>
+        <td ><img src="Profiles/faves.gif" alt="Faves gif"></td>
+        <td ><img src="Profiles/badges.gif" alt="Badges gif"></td>
     </tr>
     <tr>
-        <td style="width: 50%; text-align: center;">Badges collection</td>
-        <td style="width: 50%; text-align: center;">Paginated collectibles scroll view and animated slider</td>
+        <th style="width: 33%; text-align: center;">Paginated collectibles list & animated slider</th>
+        <th style="width: 33%; text-align: center;">Paginated friends profiles</th>
+        <th style="width: 33%; text-align: center;">Avatar items list view with output preview</th>
     </tr>
     <tr>
-        <td style="text-align: center;"><img src="Profiles/badges.gif" alt="Badges gif"></td>
-        <td style="text-align: center;"><img src="Profiles/collectibles.gif" alt="Collectibles gif"></td>
-    </tr>
-    <tr>
-        <td style="width: 50%; text-align: center;">Paginated friends profiles</td>
-        <td style="width: 50%; text-align: center;">Avatar items list view with output preview</td>
-    </tr>
-    <tr>
-        <td style="text-align: center;"><img src="Profiles/friends.gif" alt="Friends gif"></td>
-        <td style="text-align: center;"><img src="Profiles/items.gif" alt="Items gif"></td>
+        <td style=><img src="Profiles/collectibles.gif" alt="Collectibles gif"></td>
+        <td style=><img src="Profiles/friends.gif" alt="Friends gif"></td>
+        <td style=><img src="Profiles/items.gif" alt="Items gif"></td>
     </tr>
   </table>
 </div>
