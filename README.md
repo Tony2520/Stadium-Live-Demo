@@ -7,11 +7,15 @@ I hit the ground running and shipped multiple complex, end-to-end features. Belo
 
 ## Feature#1: User Profile Revamp📱
 
+The old profile has not been touched up since a year ago -- ancient history for a startup. The goal of revamp is give it a more slick and themeatic design along with 3 objectives in mind
+  - Increase in Virality (Share rate)
+  - Set up as main entry point for the upcoming monitization expansion
+  - Allow users for a more personalized skill expression (favourites, win rates, etc)
+
 New Profile             |  Old Profile
 :-------------------------:|:-------------------------:
 ![](Profiles/profile_new.png)  |  ![](Profiles/profile_old.png)
 
-- Complete overhaul of old user profile
 <ul>
   <li>Complete overhaul of old user profile</li>
   <li>Refractored old profile queries using graphql batching and caching for speedy performance gains <br>
