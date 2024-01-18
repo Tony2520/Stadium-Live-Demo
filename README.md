@@ -12,20 +12,30 @@ New Profile             |  Old Profile
 ![](Profiles/profile_new.png)  |  ![](Profiles/profile_old.png)
 
 - Complete overhaul of old user profile
-- Refractored old profile queries using graphql batching and caching for speedy performance gains 
-- Smooth, animated scrolling components inspired by Twitter profiles
-  ![Profile Demo](Profiles/profile_demo.gif)
-- Faves scrollview and player profiles
-  ![Faves gif](Profiles/faves.gif)
-- Badges collection
-  ![Badges gif](Profiles/badges.gif)
-- Paginated collectibles scroll view and animated slider
-  ![Collectibles gif](Profiles/collectibles.gif)
-- Paginated friends profiles
-  ![Friends gif](Profiles/friends.gif)
-- Avatar items list view with output preview
-  ![Items gif](Profiles/badges.gif)
-
+<ul>
+  <li>Complete overhaul of old user profile</li>
+  <li>Refractored old profile queries using graphql batching and caching for speedy performance gains <br>
+    <img src="Profiles/intro.gif" alt="Profile Demo">
+  </li>
+  <li>Smooth, animated scrolling components inspired by Twitter profiles <br>
+    <img src="Profiles/intro.gif" alt="Profile Demo">
+  </li>
+  <li>Faves scrollview and player profiles <br>
+    <img src="Profiles/faves.gif" alt="Faves gif">
+  </li>
+  <li>Badges collection <br>
+    <img src="Profiles/badges.gif" alt="Badges gif">
+  </li>
+  <li>Paginated collectibles scroll view and animated slider <br>
+    <img src="Profiles/collectibles.gif" alt="Collectibles gif">
+  </li>
+  <li>Paginated friends profiles <br>
+    <img src="Profiles/friends.gif" alt="Friends gif">
+  </li>
+  <li>Avatar items list view with output preview <br>
+    <img src="Profiles/badges.gif" alt="Items gif">
+  </li>
+</ul>
 
 
 
