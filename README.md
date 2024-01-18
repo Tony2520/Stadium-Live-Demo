@@ -8,7 +8,7 @@ If you want to check out the app -> https://www.stadiumverse.com/
 Stadium Live is a rising betting / fantasy mobile app with around 80k daily active user and 250K total downloads. With an engineering team of 8,
 I hit the ground running and shipped multiple complex, end-to-end features. Below are 4 most note-worthy ones.
 
-## Feature#1: User Profile Revamp📱
+## Project #1: User Profile Revamp📱
 
 ### Summary
 The old profile has not been touched up since a year ago -- ancient history for a startup. The goal of the revamp is to give it a more slick and themeatic design along with 3 objectives in mind
@@ -49,3 +49,8 @@ New Profile             |  Old Profile
     </tr>
   </table>
 </div>
+
+
+## Project #2: Personalized Stakes 💸
+## Project #3: Squad Multiplayer Expansion 🎮
+## Project #4: Player Mentions 🏀
