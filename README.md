@@ -1,3 +1,6 @@
+
+
+
 # Stadium Live Demo: My work for the past 8 months:
 
 If you want to check out the app -> https://www.stadiumverse.com/
@@ -18,27 +21,20 @@ New Profile             |  Old Profile
 ![](Profiles/profile_new.png)  |  ![](Profiles/profile_old.png)
 
 
-### Features
-<ul>
-  <li>Refractored old profile queries using graphql batching and caching for speedy performance gains <br>
-  </li>
-  <li>Smooth, animated scrolling/loading components inspired by Twitter profiles <br>
-    <img src="Profiles/intro.gif" alt="Profile Demo">
-  </li>
-  <li>Faves scrollview and player profiles <br>
-    <img src="Profiles/faves.gif" alt="Faves gif">
-  </li>
-  <li>Badges collection <br>
-    <img src="Profiles/badges.gif" alt="Badges gif">
-  </li>
-  <li>Paginated collectibles scroll view and animated slider <br>
-    <img src="Profiles/collectibles.gif" alt="Collectibles gif">
-  </li>
-  <li>Paginated friends profiles <br>
-    <img src="Profiles/friends.gif" alt="Friends gif">
-  </li>
-  <li>Avatar items list view with output preview <br>
-    <img src="Profiles/badges.gif" alt="Items gif">
-  </li>
-</ul>
+<style>
+table th {
+    width: 50%;
+    text-align: center
+}
+</style>
 
+### Features
+- Refractored old profile queries using graphql batching and caching for speedy performance gains
+
+| Smooth, animated scrolling/loading components inspired by Twitter profiles | Faves editing and player profiles |
+| --- | --- |
+| ![Profile Demo](Profiles/intro.gif) | ![Faves gif](Profiles/faves.gif) |
+| Badges collection | Paginated collectibles scroll view and animated slider |
+| ![Badges gif](Profiles/badges.gif) | ![Collectibles gif](Profiles/collectibles.gif) |
+| Paginated friends profiles | Avatar items list view with output preview |
+| ![Friends gif](Profiles/friends.gif) | ![Items gif](Profiles/badges.gif) |
