@@ -13,12 +13,19 @@ New Profile             |  Old Profile
 
 - Complete overhaul of old user profile
 - Refractored old profile queries using graphql batching and caching for speedy performance gains 
-- Smooth, animated scrolling components inspired by Twitter profiles![Profile Demo](Profiles/profile_demo.gif)
-- Added new Faves, badges, and friends scrollview. 
-- Added collectibles and items animated slideshow components
+- Smooth, animated scrolling components inspired by Twitter profiles
+  ![Profile Demo](Profiles/profile_demo.gif)
+- Faves scrollview and player profiles
+  ![Faves gif](Profiles/faves.gif)
+- Badges collection
+  ![Badges gif](Profiles/badges.gif)
+- Paginated collectibles scroll view and animated slider
+  ![Collectibles gif](Profiles/collectibles.gif)
+- Paginated friends profiles
+  ![Friends gif](Profiles/friends.gif)
+- Avatar items list view with output preview
+  ![Items gif](Profiles/badges.gif)
 
-Demo:
-![Profile Demo](Profiles/profile_demo.gif)
 
 
 
