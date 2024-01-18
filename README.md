@@ -21,20 +21,35 @@ New Profile             |  Old Profile
 ![](Profiles/profile_new.png)  |  ![](Profiles/profile_old.png)
 
 
-<style>
-table th {
-    width: 50%;
-    text-align: center
-}
-</style>
 
 ### Features
 - Refractored old profile queries using graphql batching and caching for speedy performance gains
 
-| Smooth, animated scrolling/loading components inspired by Twitter profiles | Faves editing and player profiles |
-| --- | --- |
-| ![Profile Demo](Profiles/intro.gif) | ![Faves gif](Profiles/faves.gif) |
-| Badges collection | Paginated collectibles scroll view and animated slider |
-| ![Badges gif](Profiles/badges.gif) | ![Collectibles gif](Profiles/collectibles.gif) |
-| Paginated friends profiles | Avatar items list view with output preview |
-| ![Friends gif](Profiles/friends.gif) | ![Items gif](Profiles/badges.gif) |
+<div style="width: 100%; display: flex; justify-content: center;">
+  <table style="width: 100%">
+    <tr>
+        <th style="width: 50%; text-align: center;">Smooth, animated scrolling/loading components</th>
+        <th style="width: 50%; text-align: center;">Faves editing and player profiles</th>
+    </tr>
+    <tr>
+        <td><img src="Profiles/intro.gif" alt="Profile Demo"></td>
+        <td><img src="Profiles/faves.gif" alt="Faves gif"></td>
+    </tr>
+    <tr>
+        <td style="width: 50%; text-align: center;">Badges collection</td>
+        <td style="width: 50%; text-align: center;">Paginated collectibles scroll view and animated slider</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;"><img src="Profiles/badges.gif" alt="Badges gif"></td>
+        <td style="text-align: center;"><img src="Profiles/collectibles.gif" alt="Collectibles gif"></td>
+    </tr>
+    <tr>
+        <td style="width: 50%; text-align: center;">Paginated friends profiles</td>
+        <td style="width: 50%; text-align: center;">Avatar items list view with output preview</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;"><img src="Profiles/friends.gif" alt="Friends gif"></td>
+        <td style="text-align: center;"><img src="Profiles/items.gif" alt="Items gif"></td>
+    </tr>
+  </table>
+</div>
