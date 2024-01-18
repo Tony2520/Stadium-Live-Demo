@@ -8,7 +8,7 @@ I hit the ground running and shipped multiple complex, end-to-end features. Belo
 ## Feature#1: User Profile Revamp📱
 
 ### Summary
-The old profile has not been touched up since a year ago -- ancient history for a startup. The goal of revamp is give it a more slick and themeatic design along with 3 objectives in mind
+The old profile has not been touched up since a year ago -- ancient history for a startup. The goal of the revamp is to give it a more slick and themeatic design along with 3 objectives in mind
   - Increase in Virality (Share rate)
   - Set up as main entry point for the upcoming monitization expansion
   - Allow users for a more personalized skill expression (favourites, win rates, etc)
@@ -22,7 +22,7 @@ New Profile             |  Old Profile
 <ul>
   <li>Refractored old profile queries using graphql batching and caching for speedy performance gains <br>
   </li>
-  <li>Smooth, animated scrolling components inspired by Twitter profiles <br>
+  <li>Smooth, animated scrolling/loading components inspired by Twitter profiles <br>
     <img src="Profiles/intro.gif" alt="Profile Demo">
   </li>
   <li>Faves scrollview and player profiles <br>
