@@ -68,16 +68,17 @@ Algorith consists of...
 - Additional scoring factors such as league variety, start time decay function, and player popularity
 - A degree of seed randomaization to ensure uniqueness of each user's stakes of for the day
 
-###Demo
+### Demo
 
 ### Challenges and Learnings
 - Really stretched my SQL knowledge. Delved into tons of Postgres docs to achieve some of the behaviours mentioned above
+- Many timezone-based edge cases to consider such as answered stakes, pending stakes, missed stakes, and pushed stakes (delayed)
 - Learned and applied advanced SQL tools such as Postgres performance indexes and nested window functions
 - Quite hard to generalize a one-hat-fit-all experience for our broad user base -- even Product wasn't quite sure. Took some iterations to finally land on this score-based approach. 
 - My last project during my internship so wrote many detailed documentaions for handoff. 
 
 
-## Project #3: Squad Multiplayer Expansion 🎮
+## Project #3: Squad 2.0 🎮
 
 ### Summaries
 Major expension on our clan-like mode Squad
@@ -88,12 +89,31 @@ Major expension on our clan-like mode Squad
 - Paginated squad chats
 - Skill based squads matching & animated squad card
 
+<div style="width: 100%; display: flex; justify-content: center;">
+  <table style="width: 100%">
+    <tr>
+        <th style="width: 33%; text-align: center;">Inter/Intra Squad leaderboard</th>
+        <th style="width: 33%; text-align: center;">Squad weekly challenges and rewards</th>
+    </tr>
+    <tr>
+        <td ><img src="Squads/leaderboards.gif" alt="Squads Leaderboards"></td>
+        <td ><img src="Squads/challenge.gif" alt="Squads Challenges"></td>
+    </tr>
+    <tr>
+        <th style="width: 33%; text-align: center;">Paginated squad chats with profiles</th>
+        <th style="width: 33%; text-align: center;">Skill based squads matching & animated squad card</th>
+    </tr>
+    <tr>
+        <td style=><img src="Squads/paginatedChats.gif" alt="Squads Chats"></td>
+        <td style=><img src="Squads/matchmaking.gif" alt="Squads LandingPage"></td>
+    </tr>
+  </table>
+</div>
+
 ### Challenges and Learnings
 - This was my first major project after ramp up. Took some stumbles but learned many interesting things like end-to-end deployment methods and back wards compatability
 - First time working with real time data as we use firebase pub/sub for our chat, quite a powerful tool
-- 
-
-
+- Handling squad join/leave end-to-end flow could be tricky at times. Learned a lot about thinking in different perspectives in terms of clients vs server
 
 ## Project #4: Player Mentions 🏀
 ### Summaries
