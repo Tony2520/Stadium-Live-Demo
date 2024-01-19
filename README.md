@@ -6,7 +6,7 @@
 If you want to check out the app -> https://www.stadiumverse.com/
 
 Stadium Live is a rising betting / fantasy mobile app with around 80k daily active user and 250K total downloads. With an engineering team of 8,
-I hit the ground running and shipped multiple complex, end-to-end features. Below are 4 most note-worthy ones.
+I hit the ground running and shipped multiple complex, end-to-end features. Below are 4 of the most note-worthy ones.
 
 ## Project #1: User Profile Revamp📱
 
@@ -50,7 +50,54 @@ New Profile             |  Old Profile
   </table>
 </div>
 
+### Challenges and Learnings
+- Lots of net new components to build out. Volumn wise easily the beefiest front-end feature I'd had to build
+- Animation is fun but hard. Lots of sleep lost on timing the animation parts (username scollY, profile pic shrinks, background blur) in sync with each other so that it all looks like a single
+seamless scroll
+- Definitly a challenge trying to make React animation work properly on both IOS and Android
+
+
 
 ## Project #2: Personalized Stakes 💸
+
+### Summary
+One of the biggest pivots we took in 2023 is the addition of compeititve sports betting, which internally we called Stakes. I built a hefty recommendation algorithm to display 6 of the most relevant stakes to an user's feed page at any point during the day. 
+Algorith consists of...
+- Personalized scoring system using users' favourites and match joins history to find explicit and implicit relevant players, teams, and leagues
+- Rank and order avaiable Moneyline/Player Props stakes based on relevance score system. 
+- Additional scoring factors such as league variety, start time decay function, and player popularity
+- A degree of seed randomaization to ensure uniqueness of each user's stakes of for the day
+
+###Demo
+
+### Challenges and Learnings
+- Really stretched my SQL knowledge. Delved into tons of Postgres docs to achieve some of the behaviours mentioned above
+- Learned and applied advanced SQL tools such as Postgres performance indexes and nested window functions
+- Quite hard to generalize a one-hat-fit-all experience for our broad user base -- even Product wasn't quite sure. Took some iterations to finally land on this score-based approach. 
+- My last project during my internship so wrote many detailed documentaions for handoff. 
+
+
 ## Project #3: Squad Multiplayer Expansion 🎮
+
+### Summaries
+Major expension on our clan-like mode Squad
+
+### Features
+- Inter/Intra Squad leaderboard
+- Squad weekly challenges and rewards
+- Paginated squad chats
+- Skill based squads matching & animated squad card
+
+### Challenges and Learnings
+- This was my first major project after ramp up. Took some stumbles but learned many interesting things like end-to-end deployment methods and back wards compatability
+- First time working with real time data as we use firebase pub/sub for our chat, quite a powerful tool
+- 
+
+
+
 ## Project #4: Player Mentions 🏀
+### Summaries
+### Features
+### Challenges and Learnings
+- 
+
