@@ -14,7 +14,7 @@ I hit the ground running and shipped multiple complex, end-to-end features. Belo
 The old profile has not been touched up since a year ago -- ancient history for a startup. The goal of the revamp is to give it a more slick and themeatic design along with 3 objectives in mind
   - Increase in Virality (Share rate)
   - Set up as main entry point for the upcoming monitization expansion
-  - Allow users for a more personalized skill expression (favourites, win rates, etc)
+  - Allow users for a more personalized skill expression (favourites, collectibles, win rates, etc)
 
 New Profile             |  Old Profile
 :-------------------------:|:-------------------------:
@@ -52,7 +52,7 @@ New Profile             |  Old Profile
 
 ### Challenges and Learnings
 - Lots of net new components to build out. Volumn wise easily the beefiest front-end feature I'd had to build
-- Animation is fun but hard. Lots of sleep lost on timing the animation parts (username scollY, profile pic shrinks, background blur) in sync with each other so that it all looks like a single
+- Animation is fun but hard. Lots of sleep lost on timing the animation parts (username scollY, profile pic shrink, background blur) in sync with each other so that it all looks like a single
 seamless scroll
 - Definitly a challenge trying to make React animation work properly on both IOS and Android
 
@@ -81,13 +81,9 @@ Algorith consists of...
 ## Project #3: Squad 2.0 🎮
 
 ### Summaries
-Major expension on our clan-like mode Squad
+Major expension on our clan-like multiplayer mode Squad
 
 ### Features
-- Inter/Intra Squad leaderboard
-- Squad weekly challenges and rewards
-- Paginated squad chats
-- Skill based squads matching & animated squad card
 
 <div style="width: 100%; display: flex; justify-content: center;">
   <table style="width: 100%">
