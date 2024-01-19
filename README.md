@@ -119,7 +119,7 @@ Added player mention feature into chatbox with suggestion preview, auto-complete
 <img src="Mentions/mention.gif" alt="Squads Chats" loop=infinite>
 
 ### Challenges and Learnings
-- This nimble looking feature was particularly hard for multiple reasons
+This nimble looking feature was particularly hard for multiple reasons
   1. React doesn't support rich text editor natively, to achieve in-place auto complete I had to add some complex string parsing and manipulation in our own text editor 
   2. For the mention popup to feel reactive upon input change, backend player lookup has to be near instaneous
   3. Non-distinct player names require extra data to be packaged with the message before traveling to backend. Adding encode/decode struture everywhere in the code base is a pretty big undertaking
