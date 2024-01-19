@@ -115,13 +115,18 @@ Major expension on our clan-like multiplayer mode Squad
 ## Project #4: Player Mentions 🏀
 ### Summaries
 Added player mention feature into chatbox with suggestion preview, auto-complete, and player profile routing
+
+
 ### Demo
 <img src="Mentions/mention.gif" alt="Squads Chats" loop=infinite>
 
 ### Challenges and Learnings
 This nimble looking feature was particularly hard for multiple reasons
   1. React doesn't support rich text editor natively, to achieve in-place auto complete I had to add some complex string parsing and manipulation in our own text editor 
-  2. For the mention popup to feel reactive upon input change, backend player lookup has to be near instaneous
+  2. For the mention popup to feel reactive upon input change, backend player lookup has to be near instaneous 
   3. Non-distinct player names require extra data to be packaged with the message before traveling to backend. Adding encode/decode struture everywhere in the code base is a pretty big undertaking
   4. Backwards compatability is a pain to work with from 3). Saniatization had to be added to ensure no weirdness for returning players
+Learnings:
+  1. Learned and implemented debounced fuzzy search and added GIN fuzzy search indexes used for speedy player lookup
+  2. Hacked together a mini rich text editor to highlight and in-place auto_complete player names
 
