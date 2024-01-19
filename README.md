@@ -70,8 +70,9 @@ Algorith consists of...
 
 ### Demo
 
+
 ### Challenges and Learnings
-- Really stretched my SQL knowledge. Delved into tons of Postgres docs to achieve some of the behaviours mentioned above
+- Really stretched my SQL knowledge. Delved into tons of Postgres SQL docs to achieve some of the behaviours mentioned above
 - Many timezone-based edge cases to consider such as answered stakes, pending stakes, missed stakes, and pushed stakes (delayed)
 - Learned and applied advanced SQL tools such as Postgres performance indexes and nested window functions
 - Quite hard to generalize a one-hat-fit-all experience for our broad user base -- even Product wasn't quite sure. Took some iterations to finally land on this score-based approach. 
@@ -92,16 +93,16 @@ Major expension on our clan-like multiplayer mode Squad
         <th style="width: 33%; text-align: center;">Squad weekly challenges and rewards</th>
     </tr>
     <tr>
-        <td ><img src="Squads/leaderboards.gif" alt="Squads Leaderboards"></td>
-        <td ><img src="Squads/challenge.gif" alt="Squads Challenges"></td>
+        <td ><img src="Squads/leaderboards.gif" alt="Squads Leaderboards" loop=infinite></td>
+        <td ><img src="Squads/challenge.gif" alt="Squads Challenges" loop=infinite></td>
     </tr>
     <tr>
         <th style="width: 33%; text-align: center;">Paginated squad chats with profiles</th>
         <th style="width: 33%; text-align: center;">Skill based squads matching & animated squad card</th>
     </tr>
     <tr>
-        <td style=><img src="Squads/paginatedChats.gif" alt="Squads Chats"></td>
-        <td style=><img src="Squads/matchmaking.gif" alt="Squads LandingPage"></td>
+        <td style=><img src="Squads/paginatedChats.gif" alt="Squads Chats" loop=infinite></td>
+        <td style=><img src="Squads/matchmaking.gif" alt="Squads LandingPage" loop=infinite></td>
     </tr>
   </table>
 </div>
