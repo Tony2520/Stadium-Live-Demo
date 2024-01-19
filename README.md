@@ -40,7 +40,7 @@ New Profile             |  Old Profile
     <tr>
         <th style="width: 33%; text-align: center;">Paginated collectibles list & animated slider</th>
         <th style="width: 33%; text-align: center;">Paginated friends profiles</th>
-        <th style="width: 33%; text-align: center;">Avatar items list view with output preview</th>
+        <th style="width: 33%; text-align: center;">Avatar items list view with outfit preview</th>
     </tr>
     <tr>
         <td style=><img src="Profiles/collectibles.gif" alt="Collectibles gif"></td>
@@ -63,19 +63,36 @@ seamless scroll
 ### Summary
 One of the biggest pivots we took in 2023 is the addition of compeititve sports betting, which internally we called Stakes. I built a hefty recommendation algorithm to display 6 of the most relevant stakes to an user's feed page at any point during the day. 
 Algorith consists of...
-- Personalized scoring system using users' favourites and match joins history to find explicit and implicit relevant players, teams, and leagues
+- Personalized scoring system using users' favourites and history to find explicit and implicit relevant players, teams, and leagues
 - Rank and order avaiable Moneyline/Player Props stakes based on relevance score system. 
 - Additional scoring factors such as league variety, start time decay function, and player popularity
-- A degree of seed randomaization to ensure uniqueness of each user's stakes of for the day
+- A degree of seed randomaization to ensure uniqueness of each user's stakes for the day
+
+
 
 ### Demo
 
+<div style="width: 100%; display: flex; justify-content: center;">
+  <table style="width: 100%">
+    <tr>
+        <th style="width: 33%; text-align: center;">NBA Fan</th>
+        <th style="width: 33%; text-align: center;">NHL Fan</th>
+        <th style="width: 33%; text-align: center;">I love all sports</th>
+    </tr>
+    <tr>
+        <td ><img src="Stakes/nba.gif" alt="nba stakes" loop=infinite></td>
+        <td ><img src="Stakes/nhl.gif" alt="nhl stakes" loop=infinite></td>
+        <td ><img src="Stakes/mixed.gif" alt="mixed stakes" loop=infinite></td>
+    </tr>
+  </table>
+</div>
 
 ### Challenges and Learnings
 - Really stretched my SQL knowledge. Delved into tons of Postgres SQL docs to achieve some of the behaviours mentioned above
 - Many timezone-based edge cases to consider such as answered stakes, pending stakes, missed stakes, and pushed stakes (delayed)
 - Learned and applied advanced SQL tools such as Postgres performance indexes and nested window functions
 - Quite hard to generalize a one-hat-fit-all experience for our broad user base -- even Product wasn't quite sure. Took some iterations to finally land on this score-based approach. 
+- Also set up as a 4-variant ab test which experiments with limiting different size of pairs of moneylines vs player props stakes.
 - My last project during my internship so wrote many detailed documentaions for handoff. 
 
 
@@ -114,8 +131,7 @@ Major expension on our clan-like multiplayer mode Squad
 
 ## Project #4: Player Mentions 🏀
 ### Summaries
-Added player mention feature into chatbox with suggestion preview, auto-complete, and player profile routing
-
+Added player/user lookup & mention functionality into chatbox with suggestion preview, auto-complete, and player profile routing
 
 ### Demo
 <img src="Mentions/mention.gif" alt="Squads Chats" loop=infinite>
@@ -124,9 +140,10 @@ Added player mention feature into chatbox with suggestion preview, auto-complete
 This nimble looking feature was particularly hard for multiple reasons
   1. React doesn't support rich text editor natively, to achieve in-place auto complete I had to add some complex string parsing and manipulation in our own text editor 
   2. For the mention popup to feel reactive upon input change, backend player lookup has to be near instaneous 
-  3. Non-distinct player names require extra data to be packaged with the message before traveling to backend. Adding encode/decode struture everywhere in the code base is a pretty big undertaking
-  4. Backwards compatability is a pain to work with from 3). Saniatization had to be added to ensure no weirdness for returning players
+  3. Non-distinct player names require extra data to be packaged and stored on the backend. Adding encode/decode struture everywhere in the code base is a pretty big undertaking
+  4. Backwards compatability is a pain to work with from 3). Saniatization had to be added everywhere to ensure no weirdness for returning users
+  
 Learnings:
-  1. Learned and implemented debounced fuzzy search and added GIN fuzzy search indexes used for speedy player lookup
-  2. Hacked together a mini rich text editor to highlight and in-place auto_complete player names
+  1. Learned and implemented debounced fuzzy search and GIN indexes used for speedy player lookup on the backend
+  2. Hacked together a mini rich text editor to highlight and in-place auto-complete player names on the frontend
 
