@@ -13,18 +13,48 @@ As a main goal of 2024 growth initiatives, we needed a loop that incentivizes us
 
 https://github.com/user-attachments/assets/0d976625-32c9-4046-88b4-0f76bbc1a31b
 
-
 ### Technical Breakdown
+**BE**
+- **Architecture**
+  - 3-layer challenge class hierarchy (Daily/Weekly/One-Time)
+  - Extensible OOP design following Open/Closed Principle
+  - 20+ Challenge Subclasses each with unique business logic
+  - Smart scheduling system adapting to user activeness
+  - Automated reward distribution flow
 
-BE:
+- **Database & Performance**
+  - High-performance Postgres design handling 50M+ rows
+  - Optimized indexes reducing query time by 80%
+  - Multi-table normalized structure:
+    - `user_challenges`: Active challenge tracking
+    - `user_claimed_challenges`: Historical records
+    - `dynamic_fields`: Flexible challenge parameters for personalization
+  - Automated cleanup policies maintaining performance
 
-- **Object-Oriented Approach**: P0 included 15 different challenges with the goal of adding much more. Designed a three-layers hierarchy of challenge classes (Daily, Weekly, One-Times) with subclasses to manage scheduling, progression, and claiming a challenge; following closely with the Open / Closed Principle and allowing easy extension for new challenge types.
-- **Database Schema**: Created normalized Postgres tables with performant Indexes for user challenge records (`user_challenges`) and claimed rewards (`user_claimed_challenges`), supporting dynamic challenges via `dynamic_fields`. Employed retention policies to keep table size under 50 Million Rows
-- **Batch vs Queue Scheduling**: A sport's app has a unique load balancing problem of spikes when a trending notification goes out and thousands of users try to log in at the same time. Both a batch and queue scheduling system are built as a preemptive measure. The scheduler will batch schedule daily entries for active users, while a schedule queue (BullMQ) will handle on-demand scheduling for new and returning users.
-- **Progress Queue:** Similar to scheduling, the challenge classes also use a queue to handle processing challenge progression. This decision was made so challenges operations as a whole are asynchronous to the core actions (staking) which trigger challenge progression.
-- **Claim and Reward System**: Implemented a robust reward claim mechanism with hooks (`onClaim`) to handle cascading updates, such as progressing weekly challenges after claiming daily ones.
-- **Dynamic User Personalization**: Many of the challenges are built to tailor individual users based on preferences and historical data, enhancing engagement. For example, the scheduler will assign a NBA Challenge to an user who is a Steph Curry fan
-- **Error Handling, Logging, and Alerting**: Added iron-clad checks both on the server and db (sql) level to prevent duplicate writes. Embedded a suite of logging and alerting Sentry tools within the Challenge class
+- **Load Management & Scaling**
+  - Dual-mode scheduling:
+    - Batch processing for 100K+ daily active users
+    - On-demand BullMQ queue for new & returning users
+  - Async progression system handling 1M+ daily actions
+  - Peak load handling during notification spikes 
+
+- **Smart Features**
+  - Personalized dynamic challenges based on:
+    - User preferences
+    - Historical engagement
+    - Sport/team affinities
+  - Cascading reward system with smart hooks
+  - Fail-safe duplicate prevention:
+    - Application-level validation
+    - Database-level constraints
+  - Comprehensive monitoring:
+    - Real-time Sentry alerts
+    - Performance metrics
+    - Error tracking & reporting
+
+**FE**
+- Responsive design with animations and loading states. Inspired by Marvel Snap:
+  [Marvel Snap Challenge UI](https://oyster.ignimgs.com/mediawiki/apis.ign.com/marvel-snap/c/cf/Challenges_%26_Refresh.jpeg?width=640)
 
 ## Project #2: User Profile Revamp📱
 
