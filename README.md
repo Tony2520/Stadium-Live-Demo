@@ -14,7 +14,7 @@ As a main goal of 2024 growth initiatives, we needed a loop that incentivizes us
 https://github.com/user-attachments/assets/0d976625-32c9-4046-88b4-0f76bbc1a31b
 
 ### Technical Breakdown
-**BE**
+**BE:**
 - **Architecture**
   - 3-layer challenge class hierarchy (Daily/Weekly/One-Time)
   - Extensible OOP design following Open/Closed Principle
@@ -23,13 +23,12 @@ https://github.com/user-attachments/assets/0d976625-32c9-4046-88b4-0f76bbc1a31b
   - Automated reward distribution flow
 
 - **Database & Performance**
-  - High-performance Postgres design handling 50M+ rows
-  - Optimized indexes reducing query time by 80%
+  - Performance Postgres indexes reducing query time by 80%
   - Multi-table normalized structure:
     - `user_challenges`: Active challenge tracking
     - `user_claimed_challenges`: Historical records
     - `dynamic_fields`: Flexible challenge parameters for personalization
-  - Automated cleanup policies maintaining performance
+  - Automated cleanup policies maintaining table size ~50M rows
 
 - **Load Management & Scaling**
   - Dual-mode scheduling:
@@ -52,11 +51,51 @@ https://github.com/user-attachments/assets/0d976625-32c9-4046-88b4-0f76bbc1a31b
     - Performance metrics
     - Error tracking & reporting
 
-**FE**
+**FE:**
 - Responsive design with animations and loading states. Inspired by Marvel Snap:
   [Marvel Snap Challenge UI](https://oyster.ignimgs.com/mediawiki/apis.ign.com/marvel-snap/c/cf/Challenges_%26_Refresh.jpeg?width=640)
+- Deeplink for every challenge routing in & out of the app that mitigates completion friction
+- A/B tested different entry points to find best coverage
 
-## Project #2: User Profile Revamp📱
+
+
+
+## Project #2: Personalized Stakes 💸
+
+### Summary
+One of the biggest pivots we took in 2023 is the addition of competitive sports betting, which internally we called Stakes. I built a hefty recommendation algorithm to display 6 of the most relevant stakes to a user's feed page at any point during the day. 
+Algorithm consists of...
+- Personalized scoring system using users' favorites and history to find explicit and implicit relevant players, teams, and leagues
+- Rank and order available Moneyline/Player Props stakes based on relevance score system. 
+- Additional scoring factors such as league variety, start time decay function, and player popularity
+- A degree of seed randomization to ensure uniqueness of each user's stakes for the day
+
+### Demo
+
+<div style="width: 100%; display: flex; justify-content: center;">
+  <table style="width: 100%">
+    <tr>
+        <th style="width: 33%; text-align: center;">NBA Fan</th>
+        <th style="width: 33%; text-align: center;">NHL Fan</th>
+        <th style="width: 33%; text-align: center;">I love all sports</th>
+    </tr>
+    <tr>
+        <td ><img src="Stakes/nba.gif" alt="nba stakes" loop=infinite></td>
+        <td ><img src="Stakes/nhl.gif" alt="nhl stakes" loop=infinite></td>
+        <td ><img src="Stakes/mixed.gif" alt="mixed stakes" loop=infinite></td>
+    </tr>
+  </table>
+</div>
+
+### Challenges and Learnings
+- Really stretched my SQL knowledge. Delved into tons of PostgreSQL docs to achieve some of the behaviors mentioned above
+- Many timezone-based edge cases to consider such as answered stakes, pending stakes, missed stakes, and pushed stakes (delayed)
+- Learned and applied advanced SQL tools such as PostgreSQL performance indexes and nested window functions
+- Quite hard to generalize a one-size-fits-all experience for our broad user base -- even Product wasn't quite sure. Took some iterations to finally land on this score-based approach. 
+- Also set up as a 4-variant A/B test which experiments with limiting different sizes of pairs of Moneylines vs player props stakes.
+- My last project during my internship so wrote many detailed documentations for handoff.
+
+## Project #3: User Profile Revamp📱
 
 ### Summary
 The old profile has not been touched up since a year ago -- ancient history for a startup. The goal of the revamp is to give it a more slick and thematic design along with 3 objectives in mind
@@ -101,41 +140,6 @@ New Profile             |  Old Profile
 - Animation is fun but hard. Lots of sleep lost on timing the animation parts (username scrollY, profile pic shrink, background blur) in sync with each other so that it all looks like a single
 seamless scroll
 - Definitely a challenge trying to make React animation work properly on both iOS and Android
-
-## Project #3: Personalized Stakes 💸
-
-### Summary
-One of the biggest pivots we took in 2023 is the addition of competitive sports betting, which internally we called Stakes. I built a hefty recommendation algorithm to display 6 of the most relevant stakes to a user's feed page at any point during the day. 
-Algorithm consists of...
-- Personalized scoring system using users' favorites and history to find explicit and implicit relevant players, teams, and leagues
-- Rank and order available Moneyline/Player Props stakes based on relevance score system. 
-- Additional scoring factors such as league variety, start time decay function, and player popularity
-- A degree of seed randomization to ensure uniqueness of each user's stakes for the day
-
-### Demo
-
-<div style="width: 100%; display: flex; justify-content: center;">
-  <table style="width: 100%">
-    <tr>
-        <th style="width: 33%; text-align: center;">NBA Fan</th>
-        <th style="width: 33%; text-align: center;">NHL Fan</th>
-        <th style="width: 33%; text-align: center;">I love all sports</th>
-    </tr>
-    <tr>
-        <td ><img src="Stakes/nba.gif" alt="nba stakes" loop=infinite></td>
-        <td ><img src="Stakes/nhl.gif" alt="nhl stakes" loop=infinite></td>
-        <td ><img src="Stakes/mixed.gif" alt="mixed stakes" loop=infinite></td>
-    </tr>
-  </table>
-</div>
-
-### Challenges and Learnings
-- Really stretched my SQL knowledge. Delved into tons of PostgreSQL docs to achieve some of the behaviors mentioned above
-- Many timezone-based edge cases to consider such as answered stakes, pending stakes, missed stakes, and pushed stakes (delayed)
-- Learned and applied advanced SQL tools such as PostgreSQL performance indexes and nested window functions
-- Quite hard to generalize a one-size-fits-all experience for our broad user base -- even Product wasn't quite sure. Took some iterations to finally land on this score-based approach. 
-- Also set up as a 4-variant A/B test which experiments with limiting different sizes of pairs of Moneylines vs player props stakes.
-- My last project during my internship so wrote many detailed documentations for handoff.
 
 ## Project #4: Squad 2.0 🎮
 
