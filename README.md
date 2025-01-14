@@ -2,7 +2,7 @@
 
 If you want to check out the app -> https://www.stadiumverse.com/
 
-Stadium Live is a rising betting/fantasy mobile app with around 3 Million total downloads with 100K daily active users. I've spent over a  With an engineering team of 8, I hit the ground running and shipped multiple complex, end-to-end features. Below are 6 of the most noteworthy ones.
+Stadium Live is a rising betting/fantasy mobile app with around 3 Million total downloads with 100K daily active users. I've spent over a year (3 internships) helping to build the new playground for Gen Z Sports fans. With an engineering team of 8, I hit the ground running and shipped multiple complex, end-to-end features. Below are 6 of the most noteworthy ones.
 
 ## Project #1: Challenges System 🎯
 
