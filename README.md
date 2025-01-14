@@ -1,10 +1,26 @@
-# Stadium Live Demo: My work for the past 8 months:
+# Stadium Live Demo: My work for the past year:
 
 If you want to check out the app -> https://www.stadiumverse.com/
 
-Stadium Live is a rising betting/fantasy mobile app with around 80k daily active users and 250K total downloads. With an engineering team of 8, I hit the ground running and shipped multiple complex, end-to-end features. Below are 4 of the most noteworthy ones.
+Stadium Live is a rising betting/fantasy mobile app with around 3 Million total downloads with 100K daily active users. I've spent over a  With an engineering team of 8, I hit the ground running and shipped multiple complex, end-to-end features. Below are 6 of the most noteworthy ones.
 
-## Project #1: User Profile Revamp📱
+## Project #1: Challenges System 🎯
+
+### Summary
+[Add your summary here about the Challenges system]
+
+### Demo
+<video width="100%" controls>
+  <source src="Challenges/Challenges.mp4" type="video/mp4">
+</video>
+
+### Technical Breakdown
+[Add your technical details here]
+
+### Challenges and Learnings
+[Add your challenges and learnings here]
+
+## Project #2: User Profile Revamp📱
 
 ### Summary
 The old profile has not been touched up since a year ago -- ancient history for a startup. The goal of the revamp is to give it a more slick and thematic design along with 3 objectives in mind
@@ -50,7 +66,7 @@ New Profile             |  Old Profile
 seamless scroll
 - Definitely a challenge trying to make React animation work properly on both iOS and Android
 
-## Project #2: Personalized Stakes 💸
+## Project #3: Personalized Stakes 💸
 
 ### Summary
 One of the biggest pivots we took in 2023 is the addition of competitive sports betting, which internally we called Stakes. I built a hefty recommendation algorithm to display 6 of the most relevant stakes to a user's feed page at any point during the day. 
@@ -85,7 +101,7 @@ Algorithm consists of...
 - Also set up as a 4-variant A/B test which experiments with limiting different sizes of pairs of Moneylines vs player props stakes.
 - My last project during my internship so wrote many detailed documentations for handoff.
 
-## Project #3: Squad 2.0 🎮
+## Project #4: Squad 2.0 🎮
 
 ### Summaries
 Major expansion on our clan-like multiplayer mode Squad
@@ -118,7 +134,7 @@ Major expansion on our clan-like multiplayer mode Squad
 - First time working with real-time data as we use Firebase pub/sub for our chat, quite a powerful tool
 - Handling squad join/leave end-to-end flow could be tricky at times. Learned a lot about thinking in different perspectives in terms of clients vs server
 
-## Project #4: Player Mentions 🏀
+## Project #5: Player Mentions 🏀
 ### Summaries
 Added player/user lookup & mention functionality into chatbox with suggestion preview, auto-complete, and player profile routing
 
