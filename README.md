@@ -10,9 +10,8 @@ Stadium Live is a rising betting/fantasy mobile app with around 3 Million total 
 [Add your summary here about the Challenges system]
 
 ### Demo
-<video width="100%" controls>
-  <source src="Challenges/Challenges.mp4" type="video/mp4">
-</video>
+
+https://github.com/user-attachments/assets/0d976625-32c9-4046-88b4-0f76bbc1a31b
 
 ### Technical Breakdown
 [Add your technical details here]
