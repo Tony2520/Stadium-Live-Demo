@@ -7,7 +7,7 @@ Stadium Live is a rising betting/fantasy mobile app with around 3 Million total 
 ## Project #1: Challenges System 🎯
 
 ### Summary
-As a main goal of 2024 growth initiatives, we needed a loop that incentivizes users to log in every day and engage in our core staking action. I spent ~2 months building out a Daily Challenge architecture that helped achieve this goal which is also scalable, dynamic, and personalized
+As a main goal of 2024 growth initiatives, we needed a loop that incentivizes users to log in **every day** and engage in the core staking action. I spent ~2 months building out a scalable, dynamic, and personalized Daily Challenge architecture that spearheaded this goal
 
 ### Demo
 
