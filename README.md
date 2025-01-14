@@ -7,19 +7,24 @@ Stadium Live is a rising betting/fantasy mobile app with around 3 Million total 
 ## Project #1: Challenges System 🎯
 
 ### Summary
-[Add your summary here about the Challenges system]
+As a main goal of 2024 growth initiatives, we needed a loop that incentivizes users to log in every day and engage in our core staking action. I spent ~2 months building out a Daily Challenge architecture that helped achieve this goal which is also scalable, dynamic, and personalized
 
 ### Demo
 
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/0d976625-32c9-4046-88b4-0f76bbc1a31b" />
-</div>
+https://github.com/user-attachments/assets/0d976625-32c9-4046-88b4-0f76bbc1a31b
+
 
 ### Technical Breakdown
-[Add your technical details here]
 
-### Challenges and Learnings
-[Add your challenges and learnings here]
+BE:
+
+- **Object-Oriented Approach**: P0 included 15 different challenges with the goal of adding much more. Designed a three-layers hierarchy of challenge classes (Daily, Weekly, One-Times) with subclasses to manage scheduling, progression, and claiming a challenge; following closely with the Open / Closed Principle and allowing easy extension for new challenge types.
+- **Database Schema**: Created normalized Postgres tables with performant Indexes for user challenge records (`user_challenges`) and claimed rewards (`user_claimed_challenges`), supporting dynamic challenges via `dynamic_fields`. Employed retention policies to keep table size under 50 Million Rows
+- **Batch vs Queue Scheduling**: A sport's app has a unique load balancing problem of spikes when a trending notification goes out and thousands of users try to log in at the same time. Both a batch and queue scheduling system are built as a preemptive measure. The scheduler will batch schedule daily entries for active users, while a schedule queue (BullMQ) will handle on-demand scheduling for new and returning users.
+- **Progress Queue:** Similar to scheduling, the challenge classes also use a queue to handle processing challenge progression. This decision was made so challenges operations as a whole are asynchronous to the core actions (staking) which trigger challenge progression.
+- **Claim and Reward System**: Implemented a robust reward claim mechanism with hooks (`onClaim`) to handle cascading updates, such as progressing weekly challenges after claiming daily ones.
+- **Dynamic User Personalization**: Many of the challenges are built to tailor individual users based on preferences and historical data, enhancing engagement. For example, the scheduler will assign a NBA Challenge to an user who is a Steph Curry fan
+- **Error Handling, Logging, and Alerting**: Added iron-clad checks both on the server and db (sql) level to prevent duplicate writes. Embedded a suite of logging and alerting Sentry tools within the Challenge class
 
 ## Project #2: User Profile Revamp📱
 
